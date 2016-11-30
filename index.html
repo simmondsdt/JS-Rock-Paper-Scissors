@@ -1,3 +1,4 @@
+<DOCTYPE! html>
 <html>
   <head>
     <title>Rock Paper Scissors</title>
@@ -5,60 +6,80 @@
     <link href='assets/stylesheets/app.css' rel='stylesheet' />
   </head>
   <body>
-    <h2 class='center'>Rock---Paper---Scissors</h2>
+    <h2 class='center white-text'><strong class='title'>Rock---Paper---Scissors</strong></h2>
+    <div class='center'>
+      <div class='btn indigo' id='newgame'>New Game</div>
+    </div>
+      <div class='spacer'></div>
     <div class='container'>
-      <hr>
+        <div class='spacer'></div>
       <div class='options'>
         <div class="row">
           <div class="col s12 m6 l4">
-            <div class="card center blue-grey darken-1">
+            <div class="card center green darken-1">
               <div class="card-content white-text">
                 <span class="card-title"><img src='assets/images/Rock.png' /></span>
-                <div class='spacer'></div>
-                <p>Very effective way to smash someone's scissors</p>
-                <hr />
+                  <div class='spacer'></div>
+                <p>Very effective way to smash scissors</p>
+                  <div class='spacer'></div>
                 <div>
-                  <h6 class='userChoice btn'>Rock</h6>
+                  <h6 class='userChoice btn indigo'>Rock</h6>
                 </div>
               </div>
             </div>
           </div>
           <div class="col s12 m6 l4">
-            <div class="card center blue-grey darken-1">
+            <div class="card center green darken-1">
               <div class="card-content white-text">
                 <span class="card-title"><img src='assets/images/Paper.png' /></span>
-                <div class='spacer'></div>
+                  <div class='spacer'></div>
                 <p>He thinks rocks are just plain ugly</p>
-                <hr />
+                  <div class='spacer'></div>
                 <div>
-                  <h6 class='userChoice btn'>Paper</h6>
+                  <h6 class='userChoice btn indigo'>Paper</h6>
                 </div>
               </div>
             </div>
           </div>
           <div class="col s12 m6 l4">
-            <div class="card center blue-grey darken-1">
+            <div class="card center green darken-1">
               <div class="card-content white-text">
                 <span class="card-title"><img src='assets/images/Scissors.png' /></span>
-                <div class='spacer'></div>
+                  <div class='spacer'></div>
                 <p>Can shred paper in seconds</p>
-                <hr />
+                  <div class='spacer'></div>
                 <div>
-                  <h6 class='userChoice btn'>Scissors</h6>
+                  <h6 class='userChoice btn indigo'>Scissors</h6>
                 </div>
               </div>
             </div>
           </div>
         </div>
         <div class="row">
-          <div class="col s12">
+          <div class="col s12 m6 l4 offset-l2">
             <div class='center'>
               <div class="card-content">
                 <span class="card-title"></span>
                 <div class='spacer'></div>
-                <div>
-                  <div class='btn' id='newgame'>New Game</div>
-                </div>
+                <ul>
+                  <h3 id='show-choice' class='black-text'>User:</h3>
+                  <h3 id='show-comp' class='black-text'>Computer:</h3>
+                  <h3 id='show-win' class='black-text'>Result: </h3>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="col s12 m6 l4">
+            <div class='center'>
+              <div class="card-content">
+                <span class="card-title"></span>
+                <div class='spacer'></div>
+                <ul>
+                  <h3 id='win' class='black-text'>Wins: 0</h3>
+                  <h3 id='lose' class='black-text'>Losses: 0</h3>
+                  <h3 id='tie' class='black-text'>Ties: 0</h3>
+                </ul>
+                <div class='spacer'</div>
               </div>
             </div>
           </div>
