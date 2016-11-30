@@ -1,0 +1,16 @@
+body {
+  background: #999999;
+}
+
+img {
+  height: 100px;
+  width: 75px;
+}
+
+.spacer {
+  margin: 15px;
+}
+
+#color {
+  background: #999999;
+}
